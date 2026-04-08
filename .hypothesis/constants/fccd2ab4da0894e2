@@ -1,0 +1,4 @@
+# file: C:\Users\sujal\Desktop\REstroExtract\src\orchestrator.py
+# hypothesis_version: 6.151.11
+
+['./logs/scraper.log', 'Failed', 'INFO', 'Maharashtra', 'N/A', 'Pending', 'Success', 'deduplicated', 'duplicates_removed', 'error', 'errors', 'extraction_status', 'license_number', 'log_file', 'log_level', 'output_file', 'record_index', 'records_extracted', 'rejected', 'target_state', 'total_attempted', 'total_extracted', 'total_rejected', 'total_validated', 'validated']

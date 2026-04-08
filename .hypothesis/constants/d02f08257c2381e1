@@ -1,0 +1,4 @@
+# file: C:\Users\sujal\Desktop\REstroExtract\src\exporter.py
+# hypothesis_version: 6.151.11
+
+['%Y%m%d', '%Y%m%d_%H%M%S', './output', '366092', 'A', 'Address', 'B', 'Business Name', 'Business Type', 'City/Town', 'D3D3D3', 'Data', 'District', 'Duplicates Removed', 'Email', 'Extraction Status', 'FFFFFF', 'Generation Date', 'Issue Date', 'License Number', 'License Type', 'Maharashtra', 'Metadata', 'Mobile', 'Owner/Contact', 'Pin Code', 'State', 'State Filter Applied', 'Unknown', 'Valid Till', 'address', 'append_mode', 'business_name', 'business_type', 'center', 'city_town', 'district', 'email', 'extraction_status', 'filepath', 'issue_date', 'left', 'license_number', 'license_type', 'mobile', 'new_records', 'output_directory', 'owner_contact', 'pin_code', 'records', 'solid', 'state', 'target_state', 'top', 'total_extracted', 'total_records', 'total_rejected', 'total_validated', 'valid_till']
