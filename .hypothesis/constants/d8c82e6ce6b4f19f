@@ -1,0 +1,4 @@
+# file: C:\Users\sujal\AppData\Roaming\Python\Python313\site-packages\openpyxl\chart\_3d.py
+# hypothesis_version: 6.151.11
+
+[500, 'ChartBase', 'depthPercent', 'hPercent', 'perspective', 'pictureOptions', 'rAngAx', 'rotX', 'rotY', 'spPr', 'surface', 'thickness', 'view3D']

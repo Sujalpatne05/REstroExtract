@@ -1,0 +1,23 @@
+# Default Configuration for FSSAI Restaurant Scraper
+# This file contains default settings for the scraper
+
+# Target state for filtering restaurants
+target_state: Maharashtra
+
+# Output directory for generated Excel files
+output_directory: ./output
+
+# HTTP request timeout in seconds
+request_timeout: 30
+
+# Rate limiting delay between requests in seconds (minimum 1.0)
+rate_limit_delay: 1.0
+
+# Maximum number of retries for failed requests
+max_retries: 3
+
+# Log file path
+log_file: ./logs/scraper.log
+
+# Log level (DEBUG, INFO, WARNING, ERROR, CRITICAL)
+log_level: INFO

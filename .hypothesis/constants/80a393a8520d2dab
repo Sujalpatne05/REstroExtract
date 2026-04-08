@@ -1,0 +1,4 @@
+# file: C:\Users\sujal\AppData\Roaming\Python\Python313\site-packages\openpyxl\writer\excel.py
+# hypothesis_version: 6.151.11
+
+['/', 'anysvml', 'comments', 'customUI', 'drawing', 'vmlDrawing', 'w', 'xl/activeX', 'xl/ctrlProps', 'xl/media/.*\\.emf', 'xl/vba', '|']

@@ -1,0 +1,4 @@
+# file: C:\Users\sujal\AppData\Roaming\Python\Python313\site-packages\openpyxl\workbook\workbook.py
+# hypothesis_version: 6.151.11
+
+['/xl/workbook.xml', 'Use wb.sheetnames', 'Use wb[sheetname]', '_archive', 'utf-8', 'visible', '{0} Copy', '{0}!{1}']

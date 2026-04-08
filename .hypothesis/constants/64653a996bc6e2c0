@@ -1,0 +1,4 @@
+# file: C:\Users\sujal\Desktop\REstroExtract\src\logger.py
+# hypothesis_version: 6.151.11
+
+['%Y-%m-%d %H:%M:%S', '=', 'EXTRACTION SUMMARY', 'FSSAI_Scraper', 'INFO']

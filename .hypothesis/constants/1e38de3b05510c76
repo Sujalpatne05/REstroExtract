@@ -1,0 +1,4 @@
+# file: C:\Users\sujal\AppData\Roaming\Python\Python313\site-packages\openpyxl\styles\named_styles.py
+# hypothesis_version: 6.151.11
+
+['Normal', '_wb', 'alignment', 'border', 'builtinId', 'cellStyle', 'cellStyles', 'count', 'fill', 'font', 'hidden', 'name', 'number_format', 'protection', 'xfId']

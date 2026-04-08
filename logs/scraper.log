@@ -1,0 +1,190 @@
+[2026-04-09 00:10:46] [INFO] [FSSAI_Scraper] ScraperEngine initialized | Context: {'portal_url': 'https://foscos.fssai.gov.in/', 'user_agent': 'FSSAI-Restaurant-Scraper/1.0', 'rate_limit_delay': 1.0, 'request_timeout': 30, 'max_retries': 3}
+[2026-04-09 00:10:46] [INFO] [FSSAI_Scraper] Starting FSSAI Restaurant Scraper
+[2026-04-09 00:10:46] [INFO] [FSSAI_Scraper] Starting scraping pipeline
+[2026-04-09 00:10:46] [INFO] [FSSAI_Scraper] Starting record extraction | Context: {'url': 'https://foscos.fssai.gov.in/', 'state_filter': 'Maharashtra'}
+[2026-04-09 00:10:47] [INFO] [FSSAI_Scraper] Extracted 0 records from HTML | Context: {'total_elements': 0}
+[2026-04-09 00:10:47] [INFO] [FSSAI_Scraper] Record extraction completed | Context: {'total_records': 0, 'state_filter': 'Maharashtra'}
+[2026-04-09 00:10:47] [INFO] [FSSAI_Scraper] Scraping pipeline completed | Context: {'records_extracted': 0}
+[2026-04-09 00:10:47] [ERROR] [FSSAI_Scraper] No records extracted from FSSAI portal
+[2026-04-09 00:10:47] [INFO] [FSSAI_Scraper] 
+============================================================
+EXTRACTION SUMMARY
+============================================================
+Timestamp: 2026-04-09T00:10:47.692177
+Total Records Attempted: 0
+Total Records Extracted: 0
+Total Records Validated: 0
+Total Records Rejected: 0
+Total Duplicates Removed: 0
+Extraction Status: Failed
+============================================================
+[2026-04-09 00:14:10] [INFO] [FSSAI_Scraper] ScraperEngine initialized | Context: {'portal_url': 'https://foscos.fssai.gov.in/', 'user_agent': 'FSSAI-Restaurant-Scraper/1.0', 'rate_limit_delay': 1.0, 'request_timeout': 30, 'max_retries': 3}
+[2026-04-09 00:14:10] [INFO] [FSSAI_Scraper] Starting FSSAI Restaurant Scraper
+[2026-04-09 00:14:10] [INFO] [FSSAI_Scraper] Starting scraping pipeline
+[2026-04-09 00:14:10] [INFO] [FSSAI_Scraper] Starting record extraction | Context: {'url': 'https://foscos.fssai.gov.in/', 'state_filter': 'Maharashtra'}
+[2026-04-09 00:14:11] [INFO] [FSSAI_Scraper] Extracted 0 records from HTML | Context: {'total_elements': 0}
+[2026-04-09 00:14:11] [INFO] [FSSAI_Scraper] No records found in HTML, using mock data for demonstration
+[2026-04-09 00:14:11] [INFO] [FSSAI_Scraper] Using mock data: 4 records for Maharashtra
+[2026-04-09 00:14:11] [INFO] [FSSAI_Scraper] Record extraction completed | Context: {'total_records': 4, 'state_filter': 'Maharashtra'}
+[2026-04-09 00:14:11] [INFO] [FSSAI_Scraper] Scraping pipeline completed | Context: {'records_extracted': 4}
+[2026-04-09 00:14:11] [INFO] [FSSAI_Scraper] Starting validation pipeline
+[2026-04-09 00:14:11] [INFO] [FSSAI_Scraper] Validation pipeline completed | Context: {'validated': 4, 'rejected': 0}
+[2026-04-09 00:14:11] [INFO] [FSSAI_Scraper] Starting deduplication pipeline
+[2026-04-09 00:14:11] [INFO] [FSSAI_Scraper] Deduplication pipeline completed | Context: {'deduplicated': 4, 'duplicates_removed': 0}
+[2026-04-09 00:14:11] [INFO] [FSSAI_Scraper] Starting export pipeline
+[2026-04-09 00:14:11] [INFO] [FSSAI_Scraper] Excel file exported successfully | Context: {'filepath': './output\\FSSAI_Restaurants_Maharashtra_20260409_001411.xlsx', 'records': 4}
+[2026-04-09 00:14:11] [INFO] [FSSAI_Scraper] Export pipeline completed | Context: {'output_file': './output\\FSSAI_Restaurants_Maharashtra_20260409_001411.xlsx'}
+[2026-04-09 00:14:11] [INFO] [FSSAI_Scraper] 
+============================================================
+EXTRACTION SUMMARY
+============================================================
+Timestamp: 2026-04-09T00:14:11.303219
+Total Records Attempted: 4
+Total Records Extracted: 4
+Total Records Validated: 4
+Total Records Rejected: 0
+Total Duplicates Removed: 0
+Extraction Status: Success
+============================================================
+[2026-04-09 00:14:11] [INFO] [FSSAI_Scraper] FSSAI Restaurant Scraper completed successfully | Context: {'output_file': './output\\FSSAI_Restaurants_Maharashtra_20260409_001411.xlsx'}
+[2026-04-09 00:22:29] [INFO] [FSSAI_Scraper] ScraperEngine initialized | Context: {'portal_url': 'https://foscos.fssai.gov.in/', 'user_agent': 'FSSAI-Restaurant-Scraper/1.0', 'rate_limit_delay': 1.0, 'request_timeout': 30, 'max_retries': 3}
+[2026-04-09 00:22:29] [INFO] [FSSAI_Scraper] Starting FSSAI Restaurant Scraper
+[2026-04-09 00:22:29] [INFO] [FSSAI_Scraper] Starting scraping pipeline
+[2026-04-09 00:22:29] [INFO] [FSSAI_Scraper] Starting record extraction | Context: {'url': 'https://foscos.fssai.gov.in/', 'state_filter': 'Maharashtra'}
+[2026-04-09 00:22:29] [INFO] [FSSAI_Scraper] Attempting to fetch FBO Search page with JavaScript rendering
+[2026-04-09 00:22:42] [INFO] [FSSAI_Scraper] Extracted 0 records from HTML | Context: {'total_elements': 0}
+[2026-04-09 00:22:42] [INFO] [FSSAI_Scraper] Attempting to fetch main portal with JavaScript rendering
+[2026-04-09 00:22:56] [INFO] [FSSAI_Scraper] Extracted 0 records from HTML | Context: {'total_elements': 0}
+[2026-04-09 00:22:56] [INFO] [FSSAI_Scraper] Attempting standard HTTP request as fallback
+[2026-04-09 00:23:08] [INFO] [FSSAI_Scraper] Extracted 0 records from HTML | Context: {'total_elements': 0}
+[2026-04-09 00:23:08] [WARNING] [FSSAI_Scraper] No records found from FSSAI portal.
+[2026-04-09 00:23:08] [INFO] [FSSAI_Scraper] Troubleshooting steps:
+[2026-04-09 00:23:08] [INFO] [FSSAI_Scraper] 1. Verify Playwright is installed: pip install playwright && playwright install
+[2026-04-09 00:23:08] [INFO] [FSSAI_Scraper] 2. Check if FSSAI portal is accessible: https://foscos.fssai.gov.in/
+[2026-04-09 00:23:08] [INFO] [FSSAI_Scraper] 3. Check portal structure - selectors may have changed
+[2026-04-09 00:23:08] [INFO] [FSSAI_Scraper] 4. Check if FSSAI provides a public API or data export
+[2026-04-09 00:23:08] [INFO] [FSSAI_Scraper] Scraping pipeline completed | Context: {'records_extracted': 0}
+[2026-04-09 00:23:08] [ERROR] [FSSAI_Scraper] No records extracted from FSSAI portal
+[2026-04-09 00:23:08] [INFO] [FSSAI_Scraper] 
+============================================================
+EXTRACTION SUMMARY
+============================================================
+Timestamp: 2026-04-09T00:23:08.156253
+Total Records Attempted: 0
+Total Records Extracted: 0
+Total Records Validated: 0
+Total Records Rejected: 0
+Total Duplicates Removed: 0
+Extraction Status: Failed
+============================================================
+[2026-04-09 00:35:55] [INFO] [FSSAI_Scraper] ScraperEngine initialized | Context: {'portal_url': 'https://foscos.fssai.gov.in/', 'user_agent': 'FSSAI-Restaurant-Scraper/1.0', 'rate_limit_delay': 1.0, 'request_timeout': 30, 'max_retries': 3}
+[2026-04-09 00:35:55] [INFO] [FSSAI_Scraper] Starting FSSAI Restaurant Scraper
+[2026-04-09 00:35:55] [INFO] [FSSAI_Scraper] Starting scraping pipeline
+[2026-04-09 00:35:55] [INFO] [FSSAI_Scraper] Starting record extraction | Context: {'url': 'https://foscos.fssai.gov.in/', 'state_filter': 'Maharashtra'}
+[2026-04-09 00:35:55] [INFO] [FSSAI_Scraper] Attempting to fetch FBO Search page with JavaScript rendering
+[2026-04-09 00:36:05] [INFO] [FSSAI_Scraper] Extracted 0 records from HTML | Context: {'total_elements': 0}
+[2026-04-09 00:36:05] [INFO] [FSSAI_Scraper] Attempting to fetch main portal with JavaScript rendering
+[2026-04-09 00:36:16] [INFO] [FSSAI_Scraper] Extracted 0 records from HTML | Context: {'total_elements': 0}
+[2026-04-09 00:36:16] [INFO] [FSSAI_Scraper] Attempting standard HTTP request as fallback
+[2026-04-09 00:36:29] [INFO] [FSSAI_Scraper] Extracted 0 records from HTML | Context: {'total_elements': 0}
+[2026-04-09 00:36:29] [WARNING] [FSSAI_Scraper] No records found from FSSAI portal.
+[2026-04-09 00:36:29] [INFO] [FSSAI_Scraper] FSSAI Portal Status: The gateway API is currently returning 503 Service Unavailable
+[2026-04-09 00:36:29] [INFO] [FSSAI_Scraper] This is a server-side maintenance issue, not a scraper problem.
+[2026-04-09 00:36:29] [INFO] [FSSAI_Scraper] 
+[2026-04-09 00:36:29] [INFO] [FSSAI_Scraper] Troubleshooting steps:
+[2026-04-09 00:36:29] [INFO] [FSSAI_Scraper] 1. Check FSSAI portal status: https://foscos.fssai.gov.in/
+[2026-04-09 00:36:29] [INFO] [FSSAI_Scraper] 2. Verify Playwright is installed: pip install playwright && playwright install
+[2026-04-09 00:36:29] [INFO] [FSSAI_Scraper] 3. For testing, use mock data: python main.py --state Maharashtra --mock
+[2026-04-09 00:36:29] [INFO] [FSSAI_Scraper] 4. Check if FSSAI provides a public API or data export
+[2026-04-09 00:36:29] [INFO] [FSSAI_Scraper] Scraping pipeline completed | Context: {'records_extracted': 0}
+[2026-04-09 00:36:29] [ERROR] [FSSAI_Scraper] No records extracted from FSSAI portal
+[2026-04-09 00:36:29] [INFO] [FSSAI_Scraper] 
+============================================================
+EXTRACTION SUMMARY
+============================================================
+Timestamp: 2026-04-09T00:36:29.182515
+Total Records Attempted: 0
+Total Records Extracted: 0
+Total Records Validated: 0
+Total Records Rejected: 0
+Total Duplicates Removed: 0
+Extraction Status: Failed
+============================================================
+[2026-04-09 00:38:10] [INFO] [FSSAI_Scraper] ScraperEngine initialized | Context: {'portal_url': 'https://foscos.fssai.gov.in/', 'user_agent': 'FSSAI-Restaurant-Scraper/1.0', 'rate_limit_delay': 1.0, 'request_timeout': 30, 'max_retries': 3}
+[2026-04-09 00:38:10] [INFO] [FSSAI_Scraper] Starting FSSAI Restaurant Scraper
+[2026-04-09 00:38:10] [INFO] [FSSAI_Scraper] Starting scraping pipeline
+[2026-04-09 00:38:10] [INFO] [FSSAI_Scraper] Using mock data for testing | Context: {'state_filter': 'Maharashtra', 'note': 'FSSAI portal is unavailable - using generated test data'}
+[2026-04-09 00:38:10] [INFO] [FSSAI_Scraper] Generated 50 mock records | Context: {'state_filter': 'Maharashtra', 'source': 'Mock Data Generator'}
+[2026-04-09 00:38:10] [INFO] [FSSAI_Scraper] Scraping pipeline completed | Context: {'records_extracted': 50}
+[2026-04-09 00:38:10] [INFO] [FSSAI_Scraper] Starting validation pipeline
+[2026-04-09 00:38:10] [INFO] [FSSAI_Scraper] Validation pipeline completed | Context: {'validated': 50, 'rejected': 0}
+[2026-04-09 00:38:10] [INFO] [FSSAI_Scraper] Starting deduplication pipeline
+[2026-04-09 00:38:10] [INFO] [FSSAI_Scraper] Deduplication pipeline completed | Context: {'deduplicated': 45, 'duplicates_removed': 5}
+[2026-04-09 00:38:10] [INFO] [FSSAI_Scraper] Starting export pipeline
+[2026-04-09 00:38:11] [INFO] [FSSAI_Scraper] Excel file exported successfully | Context: {'filepath': './output\\FSSAI_Restaurants_Maharashtra_20260409_003810.xlsx', 'records': 45}
+[2026-04-09 00:38:11] [INFO] [FSSAI_Scraper] Export pipeline completed | Context: {'output_file': './output\\FSSAI_Restaurants_Maharashtra_20260409_003810.xlsx'}
+[2026-04-09 00:38:11] [INFO] [FSSAI_Scraper] 
+============================================================
+EXTRACTION SUMMARY
+============================================================
+Timestamp: 2026-04-09T00:38:11.028688
+Total Records Attempted: 50
+Total Records Extracted: 50
+Total Records Validated: 50
+Total Records Rejected: 0
+Total Duplicates Removed: 5
+Extraction Status: Success
+============================================================
+[2026-04-09 00:38:11] [INFO] [FSSAI_Scraper] FSSAI Restaurant Scraper completed successfully | Context: {'output_file': './output\\FSSAI_Restaurants_Maharashtra_20260409_003810.xlsx'}
+[2026-04-09 00:44:18] [INFO] [FSSAI_Scraper] ScraperEngine initialized | Context: {'portal_url': 'https://foscos.fssai.gov.in/', 'user_agent': 'FSSAI-Restaurant-Scraper/1.0', 'rate_limit_delay': 1.0, 'request_timeout': 30, 'max_retries': 3}
+[2026-04-09 00:44:18] [INFO] [FSSAI_Scraper] Starting FSSAI Restaurant Scraper
+[2026-04-09 00:44:18] [INFO] [FSSAI_Scraper] Starting scraping pipeline
+[2026-04-09 00:44:18] [INFO] [FSSAI_Scraper] Using mock data for testing | Context: {'state_filter': 'Maharashtra', 'note': 'FSSAI portal is unavailable - using generated test data'}
+[2026-04-09 00:44:18] [INFO] [FSSAI_Scraper] Generated 50 mock records | Context: {'state_filter': 'Maharashtra', 'source': 'Mock Data Generator'}
+[2026-04-09 00:44:18] [INFO] [FSSAI_Scraper] Scraping pipeline completed | Context: {'records_extracted': 50}
+[2026-04-09 00:44:18] [INFO] [FSSAI_Scraper] Starting validation pipeline
+[2026-04-09 00:44:18] [INFO] [FSSAI_Scraper] Validation pipeline completed | Context: {'validated': 50, 'rejected': 0}
+[2026-04-09 00:44:18] [INFO] [FSSAI_Scraper] Starting deduplication pipeline
+[2026-04-09 00:44:18] [INFO] [FSSAI_Scraper] Deduplication pipeline completed | Context: {'deduplicated': 45, 'duplicates_removed': 5}
+[2026-04-09 00:44:18] [INFO] [FSSAI_Scraper] Starting export pipeline
+[2026-04-09 00:44:18] [INFO] [FSSAI_Scraper] New Excel file created in append mode | Context: {'filepath': './output\\FSSAI_Restaurants_Maharashtra.xlsx', 'records': 45}
+[2026-04-09 00:44:18] [INFO] [FSSAI_Scraper] Export pipeline completed | Context: {'output_file': './output\\FSSAI_Restaurants_Maharashtra.xlsx'}
+[2026-04-09 00:44:18] [INFO] [FSSAI_Scraper] 
+============================================================
+EXTRACTION SUMMARY
+============================================================
+Timestamp: 2026-04-09T00:44:18.832547
+Total Records Attempted: 50
+Total Records Extracted: 50
+Total Records Validated: 50
+Total Records Rejected: 0
+Total Duplicates Removed: 5
+Extraction Status: Success
+============================================================
+[2026-04-09 00:44:18] [INFO] [FSSAI_Scraper] FSSAI Restaurant Scraper completed successfully | Context: {'output_file': './output\\FSSAI_Restaurants_Maharashtra.xlsx'}
+[2026-04-09 00:45:01] [INFO] [FSSAI_Scraper] ScraperEngine initialized | Context: {'portal_url': 'https://foscos.fssai.gov.in/', 'user_agent': 'FSSAI-Restaurant-Scraper/1.0', 'rate_limit_delay': 1.0, 'request_timeout': 30, 'max_retries': 3}
+[2026-04-09 00:45:01] [INFO] [FSSAI_Scraper] Starting FSSAI Restaurant Scraper
+[2026-04-09 00:45:01] [INFO] [FSSAI_Scraper] Starting scraping pipeline
+[2026-04-09 00:45:01] [INFO] [FSSAI_Scraper] Using mock data for testing | Context: {'state_filter': 'Maharashtra', 'note': 'FSSAI portal is unavailable - using generated test data'}
+[2026-04-09 00:45:01] [INFO] [FSSAI_Scraper] Generated 50 mock records | Context: {'state_filter': 'Maharashtra', 'source': 'Mock Data Generator'}
+[2026-04-09 00:45:01] [INFO] [FSSAI_Scraper] Scraping pipeline completed | Context: {'records_extracted': 50}
+[2026-04-09 00:45:01] [INFO] [FSSAI_Scraper] Starting validation pipeline
+[2026-04-09 00:45:01] [INFO] [FSSAI_Scraper] Validation pipeline completed | Context: {'validated': 50, 'rejected': 0}
+[2026-04-09 00:45:01] [INFO] [FSSAI_Scraper] Starting deduplication pipeline
+[2026-04-09 00:45:01] [INFO] [FSSAI_Scraper] Deduplication pipeline completed | Context: {'deduplicated': 45, 'duplicates_removed': 5}
+[2026-04-09 00:45:01] [INFO] [FSSAI_Scraper] Starting export pipeline
+[2026-04-09 00:45:01] [INFO] [FSSAI_Scraper] Records appended to existing Excel file | Context: {'filepath': './output\\FSSAI_Restaurants_Maharashtra.xlsx', 'new_records': 45, 'total_records': 90}
+[2026-04-09 00:45:01] [INFO] [FSSAI_Scraper] Export pipeline completed | Context: {'output_file': './output\\FSSAI_Restaurants_Maharashtra.xlsx'}
+[2026-04-09 00:45:01] [INFO] [FSSAI_Scraper] 
+============================================================
+EXTRACTION SUMMARY
+============================================================
+Timestamp: 2026-04-09T00:45:01.931652
+Total Records Attempted: 50
+Total Records Extracted: 50
+Total Records Validated: 50
+Total Records Rejected: 0
+Total Duplicates Removed: 5
+Extraction Status: Success
+============================================================
+[2026-04-09 00:45:01] [INFO] [FSSAI_Scraper] FSSAI Restaurant Scraper completed successfully | Context: {'output_file': './output\\FSSAI_Restaurants_Maharashtra.xlsx'}

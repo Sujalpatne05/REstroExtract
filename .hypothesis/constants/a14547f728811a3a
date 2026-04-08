@@ -1,0 +1,4 @@
+# file: C:\Users\sujal\AppData\Roaming\Python\Python313\site-packages\bs4\_typing.py
+# hypothesis_version: 6.151.11
+
+['AttributeValueList', 'NavigableString', 'PageElement', 'ResultSet[Tag]', 'Tag']

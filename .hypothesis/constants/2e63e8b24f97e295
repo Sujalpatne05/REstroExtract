@@ -1,0 +1,4 @@
+# file: C:\Users\sujal\AppData\Roaming\Python\Python313\site-packages\openpyxl\packaging\workbook.py
+# hypothesis_version: 6.151.11
+
+['bookViews', 'calcPr', 'customWorkbookViews', 'definedNames', 'externalReferences', 'fileRecoveryPr', 'fileSharing', 'fileVersion', 'functionGroups', 'hidden', 'oleSize', 'pivotCache', 'pivotCaches', 'ref', 'sheet', 'sheets', 'smartTagPr', 'smartTagTypes', 'strict', 'transitional', 'veryHidden', 'visible', 'webPublishObjects', 'webPublishing', 'workbook', 'workbookPr', 'workbookProtection', 'xmlns']

@@ -1,0 +1,4 @@
+# file: C:\Users\sujal\Desktop\REstroExtract\src\config.py
+# hypothesis_version: 6.151.11
+
+[1.0, '#', './logs/scraper.log', './output', '.json', '.yaml', '.yml', ':', 'All', 'CRITICAL', 'DEBUG', 'ERROR', 'FSSAI_LOG_FILE', 'FSSAI_LOG_LEVEL', 'FSSAI_MAX_RETRIES', 'FSSAI_OUTPUT_DIR', 'FSSAI_RATE_LIMIT', 'FSSAI_TARGET_STATE', 'INFO', 'Maharashtra', 'WARNING', 'log_file', 'log_level', 'max_retries', 'output', 'output_directory', 'r', 'rate_limit', 'rate_limit_delay', 'request_timeout', 'state', 'target_state', 'timeout']
