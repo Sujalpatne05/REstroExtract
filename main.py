@@ -93,6 +93,7 @@ Examples:
     parser.add_argument(
         "--mock",
         action="store_true",
+        default=False,
         help="Use mock data for testing (when FSSAI portal is unavailable)"
     )
     

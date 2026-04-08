@@ -24,7 +24,7 @@ jobs:
           python -m playwright install chromium
       
       - name: Run scraper
-        run: python main.py --state Maharashtra --append-mode --mock
+        run: python main.py --state Maharashtra --append-mode
       
       - name: Upload to artifacts
         uses: actions/upload-artifact@v3
