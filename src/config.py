@@ -166,8 +166,8 @@ class ConfigManager:
             "max_retries": "max_retries",
             "log_file": "log_file",
             "log_level": "log_level",
-            "use_mock_data": "use_mock_data",
             "append_mode": "append_mode",
+            "use_mock_data": "use_mock_data",
         }
         
         for cli_key, config_key in cli_mapping.items():
@@ -185,7 +185,7 @@ class ConfigManager:
                         self.config[config_key] = float(value)
                     except (ValueError, TypeError):
                         self.config[config_key] = value
-                elif config_key in ["use_mock_data", "append_mode"]:
+                elif config_key in ["append_mode", "use_mock_data"]:
                     # Handle boolean flags
                     self.config[config_key] = bool(value)
                 else:

@@ -91,16 +91,16 @@ Examples:
     )
     
     parser.add_argument(
+        "--append-mode",
+        action="store_true",
+        help="Append data to existing Excel file instead of creating new one"
+    )
+    
+    parser.add_argument(
         "--mock",
         action="store_true",
         default=False,
         help="Use mock data for testing (when FSSAI portal is unavailable)"
-    )
-    
-    parser.add_argument(
-        "--append-mode",
-        action="store_true",
-        help="Append data to existing Excel file instead of creating new one"
     )
     
     return parser.parse_args()

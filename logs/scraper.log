@@ -188,3 +188,273 @@ Total Duplicates Removed: 5
 Extraction Status: Success
 ============================================================
 [2026-04-09 00:45:01] [INFO] [FSSAI_Scraper] FSSAI Restaurant Scraper completed successfully | Context: {'output_file': './output\\FSSAI_Restaurants_Maharashtra.xlsx'}
+[2026-04-09 02:10:39] [INFO] [FSSAI_Scraper] ScraperEngine initialized | Context: {'portal_url': 'https://foscos.fssai.gov.in/', 'user_agent': 'FSSAI-Restaurant-Scraper/1.0', 'rate_limit_delay': 1.0, 'request_timeout': 30, 'max_retries': 3}
+[2026-04-09 02:10:39] [INFO] [FSSAI_Scraper] Starting FSSAI Restaurant Scraper
+[2026-04-09 02:10:39] [INFO] [FSSAI_Scraper] Starting scraping pipeline
+[2026-04-09 02:10:39] [INFO] [FSSAI_Scraper] Starting record extraction | Context: {'url': 'https://foscos.fssai.gov.in/', 'state_filter': 'Maharashtra'}
+[2026-04-09 02:10:39] [INFO] [FSSAI_Scraper] Attempting to fetch FBO Search page with JavaScript rendering
+[2026-04-09 02:11:10] [INFO] [FSSAI_Scraper] Extracted 0 records from HTML | Context: {'total_elements': 0}
+[2026-04-09 02:11:10] [INFO] [FSSAI_Scraper] Attempting to fetch main portal with JavaScript rendering
+[2026-04-09 02:11:21] [INFO] [FSSAI_Scraper] Extracted 0 records from HTML | Context: {'total_elements': 0}
+[2026-04-09 02:11:21] [INFO] [FSSAI_Scraper] Attempting standard HTTP request as fallback
+[2026-04-09 02:11:33] [INFO] [FSSAI_Scraper] Extracted 0 records from HTML | Context: {'total_elements': 0}
+[2026-04-09 02:11:33] [WARNING] [FSSAI_Scraper] No records found from FSSAI portal.
+[2026-04-09 02:11:33] [INFO] [FSSAI_Scraper] FSSAI Portal Status: The gateway API is currently returning 503 Service Unavailable
+[2026-04-09 02:11:33] [INFO] [FSSAI_Scraper] This is a server-side maintenance issue, not a scraper problem.
+[2026-04-09 02:11:33] [INFO] [FSSAI_Scraper] 
+[2026-04-09 02:11:33] [INFO] [FSSAI_Scraper] Troubleshooting steps:
+[2026-04-09 02:11:33] [INFO] [FSSAI_Scraper] 1. Check FSSAI portal status: https://foscos.fssai.gov.in/
+[2026-04-09 02:11:33] [INFO] [FSSAI_Scraper] 2. Verify Playwright is installed: pip install playwright && playwright install
+[2026-04-09 02:11:33] [INFO] [FSSAI_Scraper] 3. For testing, use mock data: python main.py --state Maharashtra --mock
+[2026-04-09 02:11:33] [INFO] [FSSAI_Scraper] 4. Check if FSSAI provides a public API or data export
+[2026-04-09 02:11:33] [INFO] [FSSAI_Scraper] Scraping pipeline completed | Context: {'records_extracted': 0}
+[2026-04-09 02:11:33] [ERROR] [FSSAI_Scraper] No records extracted from FSSAI portal
+[2026-04-09 02:11:33] [INFO] [FSSAI_Scraper] 
+============================================================
+EXTRACTION SUMMARY
+============================================================
+Timestamp: 2026-04-09T02:11:33.694675
+Total Records Attempted: 0
+Total Records Extracted: 0
+Total Records Validated: 0
+Total Records Rejected: 0
+Total Duplicates Removed: 0
+Extraction Status: Failed
+============================================================
+[2026-04-09 02:12:00] [INFO] [FSSAI_Scraper] ScraperEngine initialized | Context: {'portal_url': 'https://foscos.fssai.gov.in/', 'user_agent': 'FSSAI-Restaurant-Scraper/1.0', 'rate_limit_delay': 1.0, 'request_timeout': 30, 'max_retries': 3}
+[2026-04-09 02:12:00] [INFO] [FSSAI_Scraper] Starting FSSAI Restaurant Scraper
+[2026-04-09 02:12:00] [INFO] [FSSAI_Scraper] Starting scraping pipeline
+[2026-04-09 02:12:00] [INFO] [FSSAI_Scraper] Using mock data for testing | Context: {'state_filter': 'Maharashtra', 'note': 'FSSAI portal is unavailable - using generated test data'}
+[2026-04-09 02:12:00] [INFO] [FSSAI_Scraper] Generated 50 mock records | Context: {'state_filter': 'Maharashtra', 'source': 'Mock Data Generator'}
+[2026-04-09 02:12:00] [INFO] [FSSAI_Scraper] Scraping pipeline completed | Context: {'records_extracted': 50}
+[2026-04-09 02:12:00] [INFO] [FSSAI_Scraper] Starting validation pipeline
+[2026-04-09 02:12:00] [INFO] [FSSAI_Scraper] Validation pipeline completed | Context: {'validated': 50, 'rejected': 0}
+[2026-04-09 02:12:00] [INFO] [FSSAI_Scraper] Starting deduplication pipeline
+[2026-04-09 02:12:00] [INFO] [FSSAI_Scraper] Deduplication pipeline completed | Context: {'deduplicated': 45, 'duplicates_removed': 5}
+[2026-04-09 02:12:00] [INFO] [FSSAI_Scraper] Starting export pipeline
+[2026-04-09 02:12:00] [INFO] [FSSAI_Scraper] Records appended to existing Excel file | Context: {'filepath': './output\\FSSAI_Restaurants_Maharashtra.xlsx', 'new_records': 45, 'total_records': 135}
+[2026-04-09 02:12:00] [ERROR] [FSSAI_Scraper] Failed to export to Excel | Context: {'records': 45}
+Traceback (most recent call last):
+  File "C:\Users\sujal\Desktop\REstroExtract\src\exporter.py", line 65, in export_to_excel
+    return self._append_to_excel(records, stats)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\sujal\Desktop\REstroExtract\src\exporter.py", line 206, in _append_to_excel
+    workbook.save(filepath)
+    ~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\sujal\AppData\Roaming\Python\Python313\site-packages\openpyxl\workbook\workbook.py", line 386, in save
+    save_workbook(self, filename)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\sujal\AppData\Roaming\Python\Python313\site-packages\openpyxl\writer\excel.py", line 291, in save_workbook
+    archive = ZipFile(filename, 'w', ZIP_DEFLATED, allowZip64=True)
+  File "C:\Python313\Lib\zipfile\__init__.py", line 1367, in __init__
+    self.fp = io.open(file, filemode)
+              ~~~~~~~^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: './output\\FSSAI_Restaurants_Maharashtra.xlsx'
+[2026-04-09 02:12:00] [ERROR] [FSSAI_Scraper] Export pipeline failed
+Traceback (most recent call last):
+  File "C:\Users\sujal\Desktop\REstroExtract\src\orchestrator.py", line 281, in execute_export_pipeline
+    output_file = self.exporter.export_to_excel(records, self.stats)
+  File "C:\Users\sujal\Desktop\REstroExtract\src\exporter.py", line 65, in export_to_excel
+    return self._append_to_excel(records, stats)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\sujal\Desktop\REstroExtract\src\exporter.py", line 206, in _append_to_excel
+    workbook.save(filepath)
+    ~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\sujal\AppData\Roaming\Python\Python313\site-packages\openpyxl\workbook\workbook.py", line 386, in save
+    save_workbook(self, filename)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\sujal\AppData\Roaming\Python\Python313\site-packages\openpyxl\writer\excel.py", line 291, in save_workbook
+    archive = ZipFile(filename, 'w', ZIP_DEFLATED, allowZip64=True)
+  File "C:\Python313\Lib\zipfile\__init__.py", line 1367, in __init__
+    self.fp = io.open(file, filemode)
+              ~~~~~~~^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: './output\\FSSAI_Restaurants_Maharashtra.xlsx'
+[2026-04-09 02:12:00] [ERROR] [FSSAI_Scraper] FSSAI Restaurant Scraper encountered a fatal error
+Traceback (most recent call last):
+  File "C:\Users\sujal\Desktop\REstroExtract\src\orchestrator.py", line 107, in run
+    output_file = self.execute_export_pipeline(deduplicated_records)
+  File "C:\Users\sujal\Desktop\REstroExtract\src\orchestrator.py", line 281, in execute_export_pipeline
+    output_file = self.exporter.export_to_excel(records, self.stats)
+  File "C:\Users\sujal\Desktop\REstroExtract\src\exporter.py", line 65, in export_to_excel
+    return self._append_to_excel(records, stats)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\sujal\Desktop\REstroExtract\src\exporter.py", line 206, in _append_to_excel
+    workbook.save(filepath)
+    ~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\sujal\AppData\Roaming\Python\Python313\site-packages\openpyxl\workbook\workbook.py", line 386, in save
+    save_workbook(self, filename)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\sujal\AppData\Roaming\Python\Python313\site-packages\openpyxl\writer\excel.py", line 291, in save_workbook
+    archive = ZipFile(filename, 'w', ZIP_DEFLATED, allowZip64=True)
+  File "C:\Python313\Lib\zipfile\__init__.py", line 1367, in __init__
+    self.fp = io.open(file, filemode)
+              ~~~~~~~^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: './output\\FSSAI_Restaurants_Maharashtra.xlsx'
+[2026-04-09 02:12:00] [INFO] [FSSAI_Scraper] 
+============================================================
+EXTRACTION SUMMARY
+============================================================
+Timestamp: 2026-04-09T02:12:00.963032
+Total Records Attempted: 50
+Total Records Extracted: 50
+Total Records Validated: 50
+Total Records Rejected: 0
+Total Duplicates Removed: 5
+Extraction Status: Failed
+============================================================
+[2026-04-09 02:12:00] [WARNING] [FSSAI_Scraper] Errors encountered during execution | Context: {'errors': ["Export pipeline error: [Errno 13] Permission denied: './output\\\\FSSAI_Restaurants_Maharashtra.xlsx'", "[Errno 13] Permission denied: './output\\\\FSSAI_Restaurants_Maharashtra.xlsx'"]}
+[2026-04-09 11:49:49] [INFO] [FSSAI_Scraper] robots.txt compliance check passed | Context: {'robots_url': 'https://foscos.fssai.gov.in/robots.txt', 'allowed': True}
+[2026-04-09 11:49:49] [INFO] [FSSAI_Scraper] ScraperEngine initialized | Context: {'portal_url': 'https://foscos.fssai.gov.in/', 'user_agent': 'FSSAI-Restaurant-Scraper/1.0', 'rate_limit_delay': 1.0, 'request_timeout': 30, 'max_retries': 3}
+[2026-04-09 11:49:49] [INFO] [FSSAI_Scraper] Starting FSSAI Restaurant Scraper
+[2026-04-09 11:49:49] [INFO] [FSSAI_Scraper] Starting scraping pipeline
+[2026-04-09 11:49:49] [INFO] [FSSAI_Scraper] robots.txt compliance check passed | Context: {'robots_url': 'https://foscos.fssai.gov.in/robots.txt', 'allowed': True}
+[2026-04-09 11:49:49] [INFO] [FSSAI_Scraper] Starting record extraction | Context: {'url': 'https://foscos.fssai.gov.in/', 'state_filter': 'Maharashtra'}
+[2026-04-09 11:49:49] [INFO] [FSSAI_Scraper] Attempting to fetch FBO Search page with JavaScript rendering
+[2026-04-09 11:50:07] [INFO] [FSSAI_Scraper] Extracted 0 records from HTML | Context: {'total_elements': 0}
+[2026-04-09 11:50:07] [INFO] [FSSAI_Scraper] Attempting to fetch main portal with JavaScript rendering
+[2026-04-09 11:50:22] [INFO] [FSSAI_Scraper] Extracted 0 records from HTML | Context: {'total_elements': 0}
+[2026-04-09 11:50:22] [INFO] [FSSAI_Scraper] Attempting standard HTTP request as fallback
+[2026-04-09 11:50:37] [INFO] [FSSAI_Scraper] Extracted 0 records from HTML | Context: {'total_elements': 0}
+[2026-04-09 11:50:37] [WARNING] [FSSAI_Scraper] No records found from FSSAI portal.
+[2026-04-09 11:50:37] [INFO] [FSSAI_Scraper] FSSAI Portal Status: The gateway API is currently returning 503 Service Unavailable
+[2026-04-09 11:50:37] [INFO] [FSSAI_Scraper] This is a server-side maintenance issue, not a scraper problem.
+[2026-04-09 11:50:37] [INFO] [FSSAI_Scraper] 
+[2026-04-09 11:50:37] [INFO] [FSSAI_Scraper] Troubleshooting steps:
+[2026-04-09 11:50:37] [INFO] [FSSAI_Scraper] 1. Check FSSAI portal status: https://foscos.fssai.gov.in/
+[2026-04-09 11:50:37] [INFO] [FSSAI_Scraper] 2. Verify Playwright is installed: pip install playwright && playwright install
+[2026-04-09 11:50:37] [INFO] [FSSAI_Scraper] 3. For testing, use mock data: python main.py --state Maharashtra --mock
+[2026-04-09 11:50:37] [INFO] [FSSAI_Scraper] 4. Check if FSSAI provides a public API or data export
+[2026-04-09 11:50:37] [INFO] [FSSAI_Scraper] Scraping pipeline completed | Context: {'records_extracted': 0}
+[2026-04-09 11:50:37] [ERROR] [FSSAI_Scraper] No records extracted from FSSAI portal
+[2026-04-09 11:50:37] [INFO] [FSSAI_Scraper] 
+============================================================
+EXTRACTION SUMMARY
+============================================================
+Timestamp: 2026-04-09T11:50:37.853623
+Total Records Attempted: 0
+Total Records Extracted: 0
+Total Records Validated: 0
+Total Records Rejected: 0
+Total Duplicates Removed: 0
+Extraction Status: Failed
+============================================================
+[2026-04-09 13:35:26] [INFO] [FSSAI_Scraper] robots.txt compliance check passed | Context: {'robots_url': 'https://foscos.fssai.gov.in/robots.txt', 'allowed': True}
+[2026-04-09 13:35:26] [INFO] [FSSAI_Scraper] ScraperEngine initialized | Context: {'portal_url': 'https://foscos.fssai.gov.in/', 'user_agent': 'FSSAI-Restaurant-Scraper/1.0', 'rate_limit_delay': 1.0, 'request_timeout': 30, 'max_retries': 3}
+[2026-04-09 13:35:26] [INFO] [FSSAI_Scraper] Starting FSSAI Restaurant Scraper
+[2026-04-09 13:35:26] [INFO] [FSSAI_Scraper] Starting scraping pipeline
+[2026-04-09 13:35:26] [INFO] [FSSAI_Scraper] robots.txt compliance check passed | Context: {'robots_url': 'https://foscos.fssai.gov.in/robots.txt', 'allowed': True}
+[2026-04-09 13:35:26] [INFO] [FSSAI_Scraper] Starting record extraction | Context: {'url': 'https://foscos.fssai.gov.in/', 'state_filter': 'Maharashtra'}
+[2026-04-09 13:35:26] [INFO] [FSSAI_Scraper] Attempting to fetch FBO Search page with JavaScript rendering
+[2026-04-09 13:35:36] [INFO] [FSSAI_Scraper] Extracted 0 records from HTML | Context: {'total_elements': 0}
+[2026-04-09 13:35:36] [INFO] [FSSAI_Scraper] Attempting to fetch main portal with JavaScript rendering
+[2026-04-09 13:35:45] [INFO] [FSSAI_Scraper] Extracted 0 records from HTML | Context: {'total_elements': 0}
+[2026-04-09 13:35:45] [INFO] [FSSAI_Scraper] Attempting standard HTTP request as fallback
+[2026-04-09 13:35:55] [INFO] [FSSAI_Scraper] Extracted 0 records from HTML | Context: {'total_elements': 0}
+[2026-04-09 13:35:55] [WARNING] [FSSAI_Scraper] No records found from FSSAI portal.
+[2026-04-09 13:35:55] [INFO] [FSSAI_Scraper] FSSAI Portal Status: The gateway API is currently returning 503 Service Unavailable
+[2026-04-09 13:35:55] [INFO] [FSSAI_Scraper] This is a server-side maintenance issue, not a scraper problem.
+[2026-04-09 13:35:55] [INFO] [FSSAI_Scraper] 
+[2026-04-09 13:35:55] [INFO] [FSSAI_Scraper] Troubleshooting steps:
+[2026-04-09 13:35:55] [INFO] [FSSAI_Scraper] 1. Check FSSAI portal status: https://foscos.fssai.gov.in/
+[2026-04-09 13:35:55] [INFO] [FSSAI_Scraper] 2. Verify Playwright is installed: pip install playwright && playwright install
+[2026-04-09 13:35:55] [INFO] [FSSAI_Scraper] 3. Check if FSSAI provides a public API or data export
+[2026-04-09 13:35:55] [INFO] [FSSAI_Scraper] Scraping pipeline completed | Context: {'records_extracted': 0}
+[2026-04-09 13:35:55] [ERROR] [FSSAI_Scraper] No records extracted from FSSAI portal
+[2026-04-09 13:35:55] [INFO] [FSSAI_Scraper] 
+============================================================
+EXTRACTION SUMMARY
+============================================================
+Timestamp: 2026-04-09T13:35:55.757012
+Total Records Attempted: 0
+Total Records Extracted: 0
+Total Records Validated: 0
+Total Records Rejected: 0
+Total Duplicates Removed: 0
+Extraction Status: Failed
+============================================================
+[2026-04-09 13:36:44] [INFO] [FSSAI_Scraper] robots.txt compliance check passed | Context: {'robots_url': 'https://foscos.fssai.gov.in/robots.txt', 'allowed': True}
+[2026-04-09 13:36:44] [INFO] [FSSAI_Scraper] ScraperEngine initialized | Context: {'portal_url': 'https://foscos.fssai.gov.in/', 'user_agent': 'FSSAI-Restaurant-Scraper/1.0', 'rate_limit_delay': 1.0, 'request_timeout': 30, 'max_retries': 3}
+[2026-04-09 13:36:44] [INFO] [FSSAI_Scraper] Starting FSSAI Restaurant Scraper
+[2026-04-09 13:36:44] [INFO] [FSSAI_Scraper] Starting scraping pipeline
+[2026-04-09 13:36:44] [INFO] [FSSAI_Scraper] robots.txt compliance check passed | Context: {'robots_url': 'https://foscos.fssai.gov.in/robots.txt', 'allowed': True}
+[2026-04-09 13:36:44] [INFO] [FSSAI_Scraper] Starting record extraction | Context: {'url': 'https://foscos.fssai.gov.in/', 'state_filter': 'Maharashtra'}
+[2026-04-09 13:36:44] [INFO] [FSSAI_Scraper] Attempting to fetch FBO Search page with JavaScript rendering
+[2026-04-09 13:36:56] [INFO] [FSSAI_Scraper] Extracted 0 records from HTML | Context: {'total_elements': 0}
+[2026-04-09 13:36:56] [INFO] [FSSAI_Scraper] Attempting to fetch main portal with JavaScript rendering
+[2026-04-09 13:37:06] [INFO] [FSSAI_Scraper] Extracted 0 records from HTML | Context: {'total_elements': 0}
+[2026-04-09 13:37:06] [INFO] [FSSAI_Scraper] Attempting standard HTTP request as fallback
+[2026-04-09 13:37:16] [INFO] [FSSAI_Scraper] Extracted 0 records from HTML | Context: {'total_elements': 0}
+[2026-04-09 13:37:16] [WARNING] [FSSAI_Scraper] No records found from FSSAI portal.
+[2026-04-09 13:37:16] [INFO] [FSSAI_Scraper] FSSAI Portal Status: The gateway API is currently returning 503 Service Unavailable
+[2026-04-09 13:37:16] [INFO] [FSSAI_Scraper] This is a server-side maintenance issue, not a scraper problem.
+[2026-04-09 13:37:16] [INFO] [FSSAI_Scraper] 
+[2026-04-09 13:37:16] [INFO] [FSSAI_Scraper] Troubleshooting steps:
+[2026-04-09 13:37:16] [INFO] [FSSAI_Scraper] 1. Check FSSAI portal status: https://foscos.fssai.gov.in/
+[2026-04-09 13:37:16] [INFO] [FSSAI_Scraper] 2. Verify Playwright is installed: pip install playwright && playwright install
+[2026-04-09 13:37:16] [INFO] [FSSAI_Scraper] 3. Check if FSSAI provides a public API or data export
+[2026-04-09 13:37:16] [INFO] [FSSAI_Scraper] Scraping pipeline completed | Context: {'records_extracted': 0}
+[2026-04-09 13:37:16] [ERROR] [FSSAI_Scraper] No records extracted from FSSAI portal
+[2026-04-09 13:37:16] [INFO] [FSSAI_Scraper] 
+============================================================
+EXTRACTION SUMMARY
+============================================================
+Timestamp: 2026-04-09T13:37:16.088791
+Total Records Attempted: 0
+Total Records Extracted: 0
+Total Records Validated: 0
+Total Records Rejected: 0
+Total Duplicates Removed: 0
+Extraction Status: Failed
+============================================================
+[2026-04-09 13:38:27] [INFO] [FSSAI_Scraper] robots.txt compliance check passed | Context: {'robots_url': 'https://foscos.fssai.gov.in/robots.txt', 'allowed': True}
+[2026-04-09 13:38:27] [INFO] [FSSAI_Scraper] ScraperEngine initialized | Context: {'portal_url': 'https://foscos.fssai.gov.in/', 'user_agent': 'FSSAI-Restaurant-Scraper/1.0', 'rate_limit_delay': 1.0, 'request_timeout': 30, 'max_retries': 3}
+[2026-04-09 13:38:27] [INFO] [FSSAI_Scraper] Starting FSSAI Restaurant Scraper
+[2026-04-09 13:38:27] [INFO] [FSSAI_Scraper] Starting scraping pipeline
+[2026-04-09 13:38:27] [INFO] [FSSAI_Scraper] Mock data mode enabled - generating test data
+[2026-04-09 13:38:27] [ERROR] [FSSAI_Scraper] Scraping pipeline failed
+Traceback (most recent call last):
+  File "C:\Users\sujal\Desktop\REstroExtract\src\orchestrator.py", line 147, in execute_scraping_pipeline
+    from src.mock_data import generate_mock_restaurants
+ImportError: cannot import name 'generate_mock_restaurants' from 'src.mock_data' (C:\Users\sujal\Desktop\REstroExtract\src\mock_data.py)
+[2026-04-09 13:38:27] [ERROR] [FSSAI_Scraper] No records extracted from FSSAI portal
+[2026-04-09 13:38:27] [INFO] [FSSAI_Scraper] 
+============================================================
+EXTRACTION SUMMARY
+============================================================
+Timestamp: 2026-04-09T13:38:27.535794
+Total Records Attempted: 0
+Total Records Extracted: 0
+Total Records Validated: 0
+Total Records Rejected: 0
+Total Duplicates Removed: 0
+Extraction Status: Failed
+============================================================
+[2026-04-09 13:38:27] [WARNING] [FSSAI_Scraper] Errors encountered during execution | Context: {'errors': ["Scraping pipeline error: cannot import name 'generate_mock_restaurants' from 'src.mock_data' (C:\\Users\\sujal\\Desktop\\REstroExtract\\src\\mock_data.py)"]}
+[2026-04-09 13:38:55] [INFO] [FSSAI_Scraper] robots.txt compliance check passed | Context: {'robots_url': 'https://foscos.fssai.gov.in/robots.txt', 'allowed': True}
+[2026-04-09 13:38:55] [INFO] [FSSAI_Scraper] ScraperEngine initialized | Context: {'portal_url': 'https://foscos.fssai.gov.in/', 'user_agent': 'FSSAI-Restaurant-Scraper/1.0', 'rate_limit_delay': 1.0, 'request_timeout': 30, 'max_retries': 3}
+[2026-04-09 13:38:55] [INFO] [FSSAI_Scraper] Starting FSSAI Restaurant Scraper
+[2026-04-09 13:38:55] [INFO] [FSSAI_Scraper] Starting scraping pipeline
+[2026-04-09 13:38:55] [INFO] [FSSAI_Scraper] Mock data mode enabled - generating test data
+[2026-04-09 13:38:55] [INFO] [FSSAI_Scraper] Generated 50 mock restaurant records
+[2026-04-09 13:38:55] [INFO] [FSSAI_Scraper] Scraping pipeline completed | Context: {'records_extracted': 50}
+[2026-04-09 13:38:55] [INFO] [FSSAI_Scraper] Starting validation pipeline
+[2026-04-09 13:38:55] [INFO] [FSSAI_Scraper] Validation pipeline completed | Context: {'validated': 50, 'rejected': 0}
+[2026-04-09 13:38:55] [INFO] [FSSAI_Scraper] Starting deduplication pipeline
+[2026-04-09 13:38:55] [INFO] [FSSAI_Scraper] Deduplication pipeline completed | Context: {'deduplicated': 50, 'duplicates_removed': 0}
+[2026-04-09 13:38:55] [INFO] [FSSAI_Scraper] Starting export pipeline
+[2026-04-09 13:38:56] [INFO] [FSSAI_Scraper] Records appended to existing Excel file | Context: {'filepath': './output\\FSSAI_Restaurants_Maharashtra.xlsx', 'new_records': 50, 'total_records': 140}
+[2026-04-09 13:38:56] [INFO] [FSSAI_Scraper] Export pipeline completed | Context: {'output_file': './output\\FSSAI_Restaurants_Maharashtra.xlsx'}
+[2026-04-09 13:38:56] [INFO] [FSSAI_Scraper] 
+============================================================
+EXTRACTION SUMMARY
+============================================================
+Timestamp: 2026-04-09T13:38:56.135133
+Total Records Attempted: 50
+Total Records Extracted: 50
+Total Records Validated: 50
+Total Records Rejected: 0
+Total Duplicates Removed: 0
+Extraction Status: Success
+============================================================
+[2026-04-09 13:38:56] [INFO] [FSSAI_Scraper] FSSAI Restaurant Scraper completed successfully | Context: {'output_file': './output\\FSSAI_Restaurants_Maharashtra.xlsx'}
+[2026-04-09 13:47:00] [INFO] [FSSAI_Scraper] Records appended to existing Excel file | Context: {'filepath': './output\\FSSAI_Restaurants_Maharashtra.xlsx', 'new_records': 20, 'total_records': 160}

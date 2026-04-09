@@ -131,7 +131,7 @@ class ScraperOrchestrator:
         """
         Execute the scraping pipeline.
         
-        Fetches and parses data from the FSSAI portal.
+        Fetches and parses data from the FSSAI portal, or uses mock data if configured.
         
         Returns:
             List of extracted restaurant records
@@ -139,14 +139,24 @@ class ScraperOrchestrator:
         try:
             self.logger.info("Starting scraping pipeline")
             
-            # Check robots.txt compliance
-            self.scraper.check_robots_txt()
+            # Check if mock data mode is enabled
+            use_mock_data = self.config.get("use_mock_data", False)
             
-            # Set user agent
-            self.scraper.set_user_agent()
-            
-            # Extract records from FSSAI portal
-            records = self.scraper.extract_records()
+            if use_mock_data:
+                self.logger.info("Mock data mode enabled - generating test data")
+                from src.mock_data import MockDataGenerator
+                target_state = self.config.get("target_state", "Maharashtra")
+                records = MockDataGenerator.generate_records(count=50, state=target_state)
+                self.logger.info(f"Generated {len(records)} mock restaurant records")
+            else:
+                # Check robots.txt compliance
+                self.scraper.check_robots_txt()
+                
+                # Set user agent
+                self.scraper.set_user_agent()
+                
+                # Extract records from FSSAI portal
+                records = self.scraper.extract_records()
             
             self.stats["total_attempted"] = len(records)
             self.stats["total_extracted"] = len(records)

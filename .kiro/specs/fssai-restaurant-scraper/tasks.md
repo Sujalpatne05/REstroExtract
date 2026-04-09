@@ -192,7 +192,7 @@ This implementation plan breaks down the FSSAI Restaurant Scraper into discrete,
     - Test handling of filename conflicts
     - _Requirements: 5.1, 5.2, 5.3, 5.4, 6.1, 6.2, 6.3_
 
-- [~] 9. Implement Main Orchestration Module
+- [ ] 9. Implement Main Orchestration Module
   - [ ] 9.1 Create ScraperOrchestrator class with execution flow
     - Implement `__init__` with config file and CLI arguments
     - Implement `run()` method as main entry point
@@ -220,7 +220,7 @@ This implementation plan breaks down the FSSAI Restaurant Scraper into discrete,
     - **Property 17: Graceful Error Termination**
     - **Validates: Requirements 1.4**
 
-- [~] 10. Create main entry point and CLI interface
+- [ ] 10. Create main entry point and CLI interface
   - [ ] 10.1 Implement main.py entry point
     - Parse command-line arguments (--state, --output, --timeout, --rate-limit, --max-retries, --log-level, --config)
     - Initialize ScraperOrchestrator with parsed arguments
@@ -234,7 +234,7 @@ This implementation plan breaks down the FSSAI Restaurant Scraper into discrete,
     - Test execution summary output
     - _Requirements: 9.1, 9.2, 9.3_
 
-- [~] 11. Create default configuration file
+- [ ] 11. Create default configuration file
   - [ ] 11.1 Create config/default_config.yaml
     - Set target_state: "Maharashtra"
     - Set output_directory: "./output"
@@ -252,7 +252,7 @@ This implementation plan breaks down the FSSAI Restaurant Scraper into discrete,
   - Ensure main entry point can be executed without errors
   - Ensure all tests pass, ask the user if questions arise.
 
-- [~] 13. Integration testing - End-to-end pipeline with mock data
+- [ ] 13. Integration testing - End-to-end pipeline with mock data
   - [ ] 13.1 Create mock FSSAI portal data for testing
     - Create sample HTML with restaurant records
     - Create test data with valid and invalid records
@@ -273,7 +273,7 @@ This implementation plan breaks down the FSSAI Restaurant Scraper into discrete,
     - Test handling of file I/O errors
     - _Requirements: 1.4, 7.1, 7.2_
 
-- [~] 14. Create documentation and README
+- [ ] 14. Create documentation and README
   - [ ] 14.1 Create README.md with project overview
     - Document project purpose and features
     - Document installation instructions
@@ -288,14 +288,14 @@ This implementation plan breaks down the FSSAI Restaurant Scraper into discrete,
     - Add comments explaining complex logic
     - _Requirements: 8.5_
 
-- [~] 15. Final checkpoint - Ensure all tests pass
+- [ ] 15. Final checkpoint - Ensure all tests pass
   - Run all unit tests and verify 80%+ code coverage
   - Run all property-based tests with 100+ iterations
   - Run all integration tests
   - Verify all 17 correctness properties are tested
   - Ensure all tests pass, ask the user if questions arise.
 
-- [~] 16. Performance and optimization review
+- [ ] 16. Performance and optimization review
   - [ ] 16.1 Review memory usage for large datasets
     - Verify in-memory data structures don't cause memory issues
     - Consider streaming or batching if needed
@@ -306,7 +306,7 @@ This implementation plan breaks down the FSSAI Restaurant Scraper into discrete,
     - Verify retry mechanism uses appropriate backoff
     - _Requirements: 8.3, 7.2_
 
-- [~] 17. Final validation and cleanup
+- [ ] 17. Final validation and cleanup
   - [ ] 17.1 Verify all requirements are met
     - Check each requirement against implementation
     - Verify all acceptance criteria are satisfied

@@ -465,11 +465,6 @@ class ScraperEngine:
             self.logger.error("Scraping disallowed by robots.txt")
             return []
         
-        # Check if mock data mode is enabled
-        use_mock = self.config.get("use_mock_data", False)
-        if use_mock:
-            return self._get_mock_data()
-        
         target_url = url or self.FSSAI_PORTAL_URL
         state_filter = self.config.get("target_state", "Maharashtra")
         request_timeout = self.config.get("request_timeout", 30)
@@ -526,8 +521,7 @@ class ScraperEngine:
         self.logger.info("Troubleshooting steps:")
         self.logger.info("1. Check FSSAI portal status: https://foscos.fssai.gov.in/")
         self.logger.info("2. Verify Playwright is installed: pip install playwright && playwright install")
-        self.logger.info("3. For testing, use mock data: python main.py --state Maharashtra --mock")
-        self.logger.info("4. Check if FSSAI provides a public API or data export")
+        self.logger.info("3. Check if FSSAI provides a public API or data export")
         
         return []
     
